@@ -16,11 +16,11 @@ The simulation code is licensed under the GPLv2 license and is delivered as it i
 
 This is a code package is related to the follow scientific article:
 
-## K. Wang, C. -T. Lam and B. K. Ng, "On Hardware Aging for Practical RIS-Assisted Communication Systems," in _Electronics Letters_, to appear.
+## K. Wang, C. -T. Lam and B. K. Ng, "[On Hardware Aging for Practical RIS-Assisted Communication Systems](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ell2.12714)," in _Electronics Letters_, January 2023, Vol. 59 No. 2.
 
 ### Abstract
 
-In this Letter, reconfigurable intelligent surface (RIS) is studied from an electronic device reliability perspective. Runtimes and lifetimes of the RIS are introduced for the first time as impairment factors that degrade the system performance. In particular, Weibull distributions are used to model the runtime-related hardware aging (HA) effect on the RIS at first. Then, we obtain a practical RIS-assisted system model with phase-dependent amplitude variations, residual hardware impairments, and HA effects. Besides, we derive closed-form expressions of the received signal power and spectral efficiency for the proposed system. Analytical and numerical evaluations reveal that the HA effect on the RIS is the major impairment factor when the runtime is beyond the lifetime of the RIS.
+In this letter, reconfigurable intelligent surface (RIS) is studied from an electronic device reliability perspective. Runtimes and lifetimes of the RIS are introduced for the first time as impairment factors that degrade the system performance. In particular, Weibull distributions are used to model the runtime-related hardware aging (HA) effect on the RIS at first. Then, a practical RIS-assisted system model with phase-dependent amplitude variations, residual hardware impairments, and HA effects, is obtained. Besides, closed-form expressions of the received signal power and spectral efficiency for the proposed system are also derived. Analytical and numerical evaluations reveal that the HA effect on the RIS is the major impairment factor when the runtime is beyond the lifetime of the RIS.
 
 ### Result 
 
