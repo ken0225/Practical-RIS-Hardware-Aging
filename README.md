@@ -5,10 +5,15 @@ The simulation code is licensed under the GPLv2 license and is delivered as it i
 ### This code package is licensed under the GPLv2 license. If you in any way use this code for research that results in publications, please cite the original article listed above.
 
 ```
-@article{wang2022risha,
-  title={On Hardware Aging for Practical RIS-Assisted Communication Systems},
+@article{wang2023risha,
+  title={On hardware aging for practical RIS-assisted communication systems},
   author={Wang, Ke and Lam, Chan-Tong and Ng, Benjamin K},
   journal={Electronics Letters},
+  volume={59},
+  number={2},
+  pages={e12714},
+  year={2023},
+  publisher={Wiley Online Library}
 }
 ```
 
