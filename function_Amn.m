@@ -55,22 +55,16 @@ for t = 1 : total_time
     
 end
 
-%This for-loop aims to calculate $A_{m,n}$, i.e., eq(6), the GC paper 2021
 for t = 1 : total_time
     
-    %The second half part of eq(6)
-    A_IRS_Vehicle = ...
+    temp_A_IRS_Vehicle = ...
         lambda_c/(4*pi) * sqrt(G_Vehicle_to_IRS_direction(t,:)...
         .*G_IRS_to_Vehicle_direction(t,:)) ./ vecnorm((p_vehicle_trajectory(t,:)-centers_IRS).'); 
     
-    %The entire eq(6) in the GC paper 2021
-    temp_A_mn_sum = sum(A_BS_IRS .* A_IRS_Vehicle); 
+    temp_A_mn_sum = sum(A_BS_IRS .* temp_A_IRS_Vehicle); 
     A_mn_sum = [A_mn_sum; temp_A_mn_sum];
     
-    %We also want to get a matrix that contains the exact gain of every
-    %element during total time. It helps calculate the approximation of the
-    %SE
-    temp_A_mn_matrix = A_BS_IRS .* A_IRS_Vehicle; 
+    temp_A_mn_matrix = A_BS_IRS .* temp_A_IRS_Vehicle; 
     A_mn_matrix = [A_mn_matrix; temp_A_mn_matrix];
     
 end
