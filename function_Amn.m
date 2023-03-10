@@ -58,8 +58,7 @@ end
 for t = 1 : total_time
     
     temp_A_IRS_Vehicle = ...
-        lambda_c/(4*pi) * sqrt(G_Vehicle_to_IRS_direction(t,:)...
-        .*G_IRS_to_Vehicle_direction(t,:)) ./ vecnorm((p_vehicle_trajectory(t,:)-centers_IRS).'); 
+        lambda_c/(4*pi) * sqrt(G_Vehicle_to_IRS_direction(t,:).*G_IRS_to_Vehicle_direction(t,:)) ./ vecnorm((p_vehicle_trajectory(t,:)-centers_IRS).'); 
     
     temp_A_mn_sum = sum(A_BS_IRS .* temp_A_IRS_Vehicle); 
     A_mn_sum = [A_mn_sum; temp_A_mn_sum];
